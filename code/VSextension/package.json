@@ -1,0 +1,38 @@
+{
+  "name": "ai-language-support",
+  "displayName": "AI Language",
+  "description": "Syntax highlighting and language support for the AI Stack VM",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ai",
+        "aliases": [
+          "AI",
+          "ai"
+        ],
+        "extensions": [
+          ".ai"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icon.png",
+          "dark": "./icon.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ai",
+        "scopeName": "source.ai",
+        "path": "./syntaxes/ai.tmLanguage.json"
+      }
+    ]
+  }
+}

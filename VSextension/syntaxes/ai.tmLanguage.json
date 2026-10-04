@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "ai",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#numbers"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "begin": "\\(",
+          "end": "\\)",
+          "name": "comment.block.ai"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "begin": "\"",
+          "end": "\"",
+          "name": "string.quoted.double.ai"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "match": "\\b(?i)(IF|ELSE|END|START|WHILE|REPEAT|FUNC|RET|TRY|CATCH|END_TRY|IMPORT|PRINT|ASSERT|DUP|DROP|SWAP)\\b",
+          "name": "keyword.control.ai"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "match": "(\\+|-|\\*|/|%|==|!=|<|>|<=|>=|=)",
+          "name": "keyword.operator.ai"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "match": "\\b-?[0-9]+\\b",
+          "name": "constant.numeric.ai"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.ai"
+}
