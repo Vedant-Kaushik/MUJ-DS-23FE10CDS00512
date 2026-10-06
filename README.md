@@ -39,3 +39,6 @@ python3 code/main.py test.ai
 # 4. Run hardware efficiency benchmark
 python3 code/benchmark.py
 ```
+
+
+<!-- Final Submission Check Complete -->
